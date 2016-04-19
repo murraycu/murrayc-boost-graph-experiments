@@ -24,6 +24,7 @@ AX_CXX_COMPILE_STDCXX_11([noext],[mandatory])
 AX_BOOST_BASE
 AX_BOOST_SYSTEM
 AX_BOOST_TIMER
+AX_BOOST_GRAPH
 
 # Allow use of mm-common macros for the warnings option.
 MM_PREREQ([0.9.5])

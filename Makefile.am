@@ -10,10 +10,10 @@ DISTCHECK_CONFIGURE_FLAGS = --enable-warnings=fatal --disable-update-mime-databa
 
 #SUBDIRS =
 
-AM_CXXFLAGS = $(PROJECT_WXXFLAGS)
+AM_CXXFLAGS = $(PROJECT_CFLAGS) $(PROJECT_WXXFLAGS) $(BOOST_CPPFLAGS)
 
 # TODO: Why do we still need to specify this for each executable that we build?
-COMMON_CXXFLAGS = $(PROJECT_CFLAGS) $(PROJECT_WXXFLAGS)
+COMMON_CXXFLAGS = $(PROJECT_CFLAGS) $(PROJECT_WXXFLAGS) $(BOOST_CPPFLAGS)
 
 check_PROGRAMS = \
   src/topological-sort/example
