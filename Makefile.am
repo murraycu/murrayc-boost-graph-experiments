@@ -25,7 +25,9 @@ src_topological_sort_example_SOURCES = \
 	src/topological-sort/main.cc
 src_topological_sort_example_CXXFLAGS = \
 	$(COMMON_CXXFLAGS)
-src_topological_sort_example__LDADD = \
-	$(PROJECT_LIBS)
+src_topological_sort_example_LDADD = \
+	$(PROJECT_LIBS) \
+	$(BOOST_SYSTEM_LIB) \
+	$(BOOST_TIMER_LIB)
 
 
